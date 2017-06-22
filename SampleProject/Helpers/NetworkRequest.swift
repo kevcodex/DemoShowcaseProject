@@ -31,7 +31,7 @@ extension NetworkRequest {
 
   var baseURL: URL {
 
-    return URL(string: "")!
+    return URL(string: "https://raw.githubusercontent.com")!
   }
 
   func buildURLRequest() -> URLRequest {
