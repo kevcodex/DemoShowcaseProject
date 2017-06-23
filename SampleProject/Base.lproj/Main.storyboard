@@ -143,7 +143,7 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
-        <!--Some of My Fav Video Games-->
+        <!--Favorite Video Games-->
         <scene sceneID="ePO-lm-bQ5">
             <objects>
                 <viewController id="3ug-aD-5bd" customClass="ListViewController" customModule="SampleProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -238,7 +238,7 @@
                             <constraint firstItem="Ybr-ak-UGV" firstAttribute="top" secondItem="9wY-rt-uYT" secondAttribute="top" id="Ls8-Le-RIR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Some of My Fav Video Games" id="e0x-qD-R2v"/>
+                    <navigationItem key="navigationItem" title="Favorite Video Games" id="e0x-qD-R2v"/>
                     <connections>
                         <outlet property="collectionView" destination="Ybr-ak-UGV" id="est-EL-lk2"/>
                         <segue destination="cSs-k3-cEo" kind="presentation" identifier="ShowDetails" id="JTb-sk-x3b"/>

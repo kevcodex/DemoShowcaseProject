@@ -9,11 +9,11 @@
     },
     {
         "id": 2,
-        "description": "Not technically a video game, but I enjoy playing it. Chess is a two-player strategy board game played on a chessboard, a checkered gameboard with 64 squares arranged in an 8×8 grid. The game is played by millions of people worldwide.",
+        "description": "Determination, never give up, no matter what; Not technically a video game, but I enjoy games that require you to think ahead. Chess is a two-player strategy board game played on a chessboard, a checkered gameboard with 64 squares arranged in an 8×8 grid. The game is played by millions of people worldwide.",
         "title": "Chess",
         "image": "https://raw.githubusercontent.com/kirby10023/DemoShowcaseProject/master/SupportFiles/Chess.jpg",
-        "date": "500-01-01T00:00:00.000Z",
-        "developer": "?????"
+        "date": "0500-01-01T00:00:00.000Z",
+        "developer": "Gupta Empire?"
     },
     {
         "id": 3,
@@ -61,7 +61,7 @@
         "title": "Fallout",
         "image": "https://raw.githubusercontent.com/kirby10023/DemoShowcaseProject/master/SupportFiles/Fallout.jpg",
         "date": "1997-09-30T00:00:00.000Z",
-        "developer": "Bethesda Game Studios (currently)"
+        "developer": "Bethesda Game Studios"
     },
     {
         "id": 9,
