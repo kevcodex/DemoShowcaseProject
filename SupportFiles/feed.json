@@ -6,5 +6,77 @@
         "image": "https://raw.githubusercontent.com/kirby10023/DemoShowcaseProject/master/SupportFiles/Half-Life2.jpg",
         "date": "2004-11-16T00:00:00.000Z",
         "developer": "Valve Corporation"
+    },
+    {
+        "id": 2,
+        "description": "Not technically a video game, but I enjoy playing it. Chess is a two-player strategy board game played on a chessboard, a checkered gameboard with 64 squares arranged in an 8×8 grid. The game is played by millions of people worldwide.",
+        "title": "Chess",
+        "image": "https://raw.githubusercontent.com/kirby10023/DemoShowcaseProject/master/SupportFiles/Chess.jpg",
+        "date": "500-01-01T00:00:00.000Z",
+        "developer": "?????"
+    },
+    {
+        "id": 3,
+        "description": "Civilization is a series of turn-based strategy video games first released in 1991. Sid Meier developed the first game in the series and has had creative input for most of the rest, and his name is usually included in the formal title of these games, such as Sid Meier's Civilization. There have since been six main games in the series, a number of expansion packs and spin-off games, as well as board games inspired by the video game series. The series is considered a formulative example of the 4X genre, in which players achieve victory through four routes, eXplore, eXpand, eXploit, and eXterminate",
+        "title": "Civilization",
+        "image": "https://raw.githubusercontent.com/kirby10023/DemoShowcaseProject/master/SupportFiles/Civilization.jpg",
+        "date": "1991-09-01T00:00:00.000Z",
+        "developer": "Firaxis Games"
+    },
+    {
+        "id": 4,
+        "description": "Team Fortress 2 (TF2) is a team-based multiplayer first-person shooter video game developed and published by Valve Corporation. In Team Fortress 2, players join one of two teams comprising nine character classes, battling in a variety of game modes including capture the flag and king of the hill. Team Fortress 2 has similar gameplay as previous releases in the series due to its focus around two opposing teams competing for a combat-based objective. In the game's fiction, the teams are composed of mercenaries hired by two feuding brothers to protect the company assets belonging to one brother while trying to destroy those of the other; the teams are thus represented by the names of these companies: Reliable Excavation & Demolition (RED) and Builders League United (BLU). Players can choose to play as one of nine character classes in these teams, each with his own unique strengths, weaknesses, and weapons. In order to accomplish objectives efficiently, a balance of these classes is required due to how these strengths and weaknesses interact with each other in a team based environment. Although the abilities of a number of classes have changed from earlier Team Fortress incarnations, the basic elements of each class have remained, that being one primary weapon, one secondary weapon, and one melee weapon. The game was released with six official maps, although over 40 maps have since been included in subsequent updates, including competitive remakes of older maps.",
+        "title": "Team Fortress 2",
+        "image": "https://raw.githubusercontent.com/kirby10023/DemoShowcaseProject/master/SupportFiles/Tf2.jpg",
+        "date": "2007-08-10T00:00:00.000Z",
+        "developer": "Valve Corporation"
+    },
+    {
+        "id": 5,
+        "description": "The Witcher 3: Wild Hunt is an action role-playing video game developed by CD Projekt RED and published by CD Projekt. Played in an open world with a third-person perspective, players control protagonist Geralt of Rivia, a monster hunter known as a witcher, who seeks to find his adopted daughter on the run from the Wild Hunt, an otherworldly force determined to capture and utilise her powers. Throughout the game, players battle against the world's many dangers using weapons and magic, interact with various non-player characters, and complete main story quests, side quests, bounty contracts, and treasure hunts to acquire experience points and gold used to increase Geralt's various abilities and equipment. The game's central story features multiple endings that are determined by Geralt's choices made by the player during certain points of the story",
+        "title": "Witcher 3",
+        "image": "https://raw.githubusercontent.com/kirby10023/DemoShowcaseProject/master/SupportFiles/Witcher3.jpg",
+        "date": "2015-05-19T00:00:00.000Z",
+        "developer": "CD Projekt RED"
+    },
+    {
+        "id": 6,
+        "description": "Super Smash Bros is a series of crossover fighting games published by Nintendo, that primarily features characters from franchises established on its systems.Gameplay in the Super Smash Bros. series differs from many fighting games. Instead of winning by depleting an opponent's life bar, players seek to launch their opponents off the stage and out of the map. Characters have a damage total which rises as they take damage, represented by a percentage value that measures up to 999%. As a character's percentage rises, the character can be knocked progressively farther by an opponent's attacks. To knock out an opponent, the player must knock that character outside the arena's boundaries in any direction. When a character is launched off the stage, the character can attempt to recover by using jumping moves and abilities to return to the stage. Some characters have an easier time recovering onto the stage than others due to their moves and abilities. Additionally, some characters vary in weight, with lighter characters being easier to launch than heavy characters.",
+        "title": "Super Smash Bros",
+        "image": "https://raw.githubusercontent.com/kirby10023/DemoShowcaseProject/master/SupportFiles/Supersmash.jpg",
+        "date": "2004-11-16T00:00:00.000Z",
+        "developer": "Nintendo"
+    },
+    {
+        "id": 7,
+        "description": "Total War is a computer series of strategy games developed by The Creative Assembly. These combine turn-based strategy and resource management, with real-time tactical control of battles.",
+        "title": "Total War",
+        "image": "https://raw.githubusercontent.com/kirby10023/DemoShowcaseProject/master/SupportFiles/Totalwar.jpg",
+        "date": "2000-06-13T00:00:00.000Z",
+        "developer": "Creative Assembly"
+    },
+    {
+        "id": 8,
+        "description": "Fallout is a series of post-apocalyptic retrofuturistic role-playing video games.The series is set in a fictionalized United States in an alternate history scenario that diverged from our reality following World War II. The transistor was not invented, while vacuum tubes and atomic physics became the cornerstones to scientific progress, eventually achieving the technological aspirations of the early Atomic Age and locking society into a 1950s cultural stasis. Thus, in this alternative atompunk golden age, a bizarre socio-technological status quo emerges, in which advanced robots, nuclear-powered cars, directed-energy weapons, and other futuristic technologies are seen alongside 1950s-era computers and telephones. The United States divides itself into 13 commonwealths and the aesthetics and Cold War paranoia of the 1950s continue to dominate the American lifestyle well into the 21st century, leading to America becoming a fascist police state and ultimately abandoning its democratic ideals in favor of a deeply corrupt plutocratic system and capitalism. Political dissidents were sent to prison camps where they were experimented on, and anyone who spoke out against the Enclave-controlled government, be they citizens or occupied Canadians, were executed en masse in the streets. More than a hundred years before the start of the series, an energy crisis emerged caused by the depletion of petroleum reserves, leading to a period called the Resource Wars – a series of events which included a war between the European Commonwealth and the Middle East, the disbanding of the United Nations, the U.S. invasion of Mexico, as well as the annexation of Canada, and a Chinese invasion and subsequent military occupation of Alaska coupled with their release of the New Plague that devastated the American mainland. These eventually culminated in the Great War in the year 2077, a two-hour nuclear exchange on an apocalyptic scale, which subsequently created the post-apocalyptic United States, the setting of the Fallout world.",
+        "title": "Fallout",
+        "image": "https://raw.githubusercontent.com/kirby10023/DemoShowcaseProject/master/SupportFiles/Fallout.jpg",
+        "date": "1997-09-30T00:00:00.000Z",
+        "developer": "Bethesda Game Studios (currently)"
+    },
+    {
+        "id": 9,
+        "description": "StarCraft is a military science fiction real-time strategy video game developed and published by Blizzard Entertainment and released for Microsoft Windows on March 31, 1998. Set in a fictitious timeline during the Earth's 25th century, the game revolves around three species fighting for dominance in a distant part of the Milky Way galaxy known as the Koprulu Sector: the Terrans, humans exiled from Earth skilled at adapting to any situation; the Zerg, a race of insectoid aliens in pursuit of genetic perfection, obsessed with assimilating other races; and the Protoss, a humanoid species with advanced technology and psionic abilities, attempting to preserve their civilization and strict philosophical way of living from the Zerg.",
+        "title": "Starcraft",
+        "image": "https://raw.githubusercontent.com/kirby10023/DemoShowcaseProject/master/SupportFiles/Starcraft.jpg",
+        "date": "1998-03-31T00:00:00.000Z",
+        "developer": "Blizzard Entertainment"
+    },
+    {
+        "id": 10,
+        "description": "BioShock is a first-person shooter video game developed by 2K Boston (later Irrational Games) and 2K Australia, and published by 2K Games. BioShock is set in 1960. The player guides the protagonist, Jack, after his airplane crashes in the ocean near the bathysphere terminus that leads to the underwater city of Rapture. Built by the business magnate Andrew Ryan, the city was intended to be an isolated utopia, but the discovery of ADAM, a genetic material which can be used to grant superhuman powers, initiated the city's turbulent decline. Jack tries to find a way to escape, fighting through hordes of ADAM-obsessed enemies, and the iconic, deadly Big Daddies, while engaging with the few sane humans that remain and eventually learning of Rapture's past. The player, as Jack, is able to defeat foes in a number of ways by using weapons, utilizing plasmids that give unique powers, and by turning Rapture's own defenses against them. BioShock includes elements of role-playing games, giving the player different approaches in engaging enemies such as by stealth, as well as moral choices of saving or killing characters; additionally, the game and biopunk theme borrow concepts from the survival horror genre.",
+        "title": "Bioshock",
+        "image": "https://raw.githubusercontent.com/kirby10023/DemoShowcaseProject/master/SupportFiles/Bioshock.jpg",
+        "date": "2007-08-21T00:00:00.000Z",
+        "developer": "2K Games"
     }
 ]
