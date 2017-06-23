@@ -43,7 +43,7 @@
         "id": 6,
         "description": "Super Smash Bros is a series of crossover fighting games published by Nintendo, that primarily features characters from franchises established on its systems.Gameplay in the Super Smash Bros. series differs from many fighting games. Instead of winning by depleting an opponent's life bar, players seek to launch their opponents off the stage and out of the map. Characters have a damage total which rises as they take damage, represented by a percentage value that measures up to 999%. As a character's percentage rises, the character can be knocked progressively farther by an opponent's attacks. To knock out an opponent, the player must knock that character outside the arena's boundaries in any direction. When a character is launched off the stage, the character can attempt to recover by using jumping moves and abilities to return to the stage. Some characters have an easier time recovering onto the stage than others due to their moves and abilities. Additionally, some characters vary in weight, with lighter characters being easier to launch than heavy characters.",
         "title": "Super Smash Bros",
-        "image": "https://raw.githubusercontent.com/kirby10023/DemoShowcaseProject/master/SupportFiles/Supersmash.jpg",
+        "image": "https://raw.githubusercontent.com/kirby10023/DemoShowcaseProject/master/SupportFiles/SuperSmash.jpg",
         "date": "2004-11-16T00:00:00.000Z",
         "developer": "Nintendo"
     },
