@@ -37,14 +37,14 @@ class CustomTransitionController: NSObject, UIViewControllerAnimatedTransitionin
 
     let duration = transitionDuration(using: transitionContext)
 
-    UIView.animate(withDuration: duration, animations: { _ in
+    UIView.animate(withDuration: duration, animations: { 
 
       fromVC.view.alpha = 0.0
 
     },
     completion: { _ in
 
-      UIView.animate(withDuration: duration, animations: { _ in
+      UIView.animate(withDuration: duration, animations: { 
 
         snapshot?.frame = toVC.view.frame
 
