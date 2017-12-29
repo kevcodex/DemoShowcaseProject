@@ -15,7 +15,7 @@ final class NetworkAPI {
     typealias Response = NetworkSearchResponse<ObjectFeed>
 
     var path: String {
-      return "/kirby10023/DemoShowcaseProject/master/SupportFiles/feed.json"
+      return "/gamejson"
     }
 
     var parameters: Any? {

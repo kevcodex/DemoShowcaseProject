@@ -9,11 +9,13 @@
 import Foundation
 import UIKit
 
-//the object that is recieved
+// The object that is recieved
 struct ObjectFeed: JSONDecodable {
-  let id: Int
+    
+  private static let dateFormatter = DateFormatter()
+
   let description: String
-  let title: String
+  let name: String
   let imagePath: String?
   let rawDate: String
   let developer: String
@@ -27,17 +29,16 @@ struct ObjectFeed: JSONDecodable {
   }
 
   var readableDate: String {
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
-    dateFormatter.timeZone = TimeZone(abbreviation: "GMT")
-    let date = dateFormatter.date(from: rawDate)!
+    ObjectFeed.dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    ObjectFeed.dateFormatter.timeZone = TimeZone(abbreviation: "GMT")
+    let date = ObjectFeed.dateFormatter.date(from: rawDate)!
 
-    dateFormatter.dateFormat = "MMM dd, yyyy 'at' hh:mm a"
-    dateFormatter.amSymbol = "AM"
-    dateFormatter.pmSymbol = "PM"
-    dateFormatter.timeZone = NSTimeZone.local
+    ObjectFeed.dateFormatter.dateFormat = "MMM dd, yyyy 'at' hh:mm a"
+    ObjectFeed.dateFormatter.amSymbol = "AM"
+    ObjectFeed.dateFormatter.pmSymbol = "PM"
+    ObjectFeed.dateFormatter.timeZone = NSTimeZone.local
 
-    let string = dateFormatter.string(from: date)
+    let string = ObjectFeed.dateFormatter.string(from: date)
 
     return string
   }
@@ -46,16 +47,13 @@ struct ObjectFeed: JSONDecodable {
     guard let dictionary = json as? [String: Any] else {
       throw JSONDecodeError.invalidFormat
     }
-    guard let id = dictionary["id"] as? Int else {
-      throw JSONDecodeError.missingValue(key: "id", actualValue: dictionary["id"])
-    }
 
     guard let description = dictionary["description"] as? String else {
       throw JSONDecodeError.missingValue(key: "description", actualValue: dictionary["description"])
     }
 
-    guard let title = dictionary["title"] as? String else {
-      throw JSONDecodeError.missingValue(key: "title", actualValue: dictionary["title"])
+    guard let name = dictionary["name"] as? String else {
+      throw JSONDecodeError.missingValue(key: "name", actualValue: dictionary["name"])
     }
     guard let imagePath = dictionary["image"] else {
       throw JSONDecodeError.missingValue(key: "image", actualValue: dictionary["image"])
@@ -67,14 +65,13 @@ struct ObjectFeed: JSONDecodable {
       throw JSONDecodeError.missingValue(key: "developer", actualValue: dictionary["developer"])
     }
 
-    self.id = id
     self.description = description
-    self.title = title
+    self.name = name
     self.rawDate = rawDate
     self.developer = developer
     self.imagePath = imagePath as? String ?? nil
 
-    // probably better to cache the images due to large size
+    // probably better to cache or async the images due to large size
     if let imagePath = self.imagePath,
       let url = URL(string: imagePath),
       let data = try? Data(contentsOf: url),

@@ -23,7 +23,7 @@ class DetailsViewController: UIViewController {
     super.viewDidLoad()
 
     dateLabel.text = result.readableDate
-    titleLabel.text = result.title
+    titleLabel.text = result.name
     descriptionLabel.text = result.description
 
     let colors = [UIColor.clear.cgColor, UIColor.white.cgColor]
@@ -49,7 +49,7 @@ extension DetailsViewController {
   @IBAction func ShareTapped(_ sender: UIBarButtonItem) {
 
     if let image = result.image {
-      let vc = UIActivityViewController(activityItems: [result.title, image], applicationActivities: [])
+      let vc = UIActivityViewController(activityItems: [result.name, image], applicationActivities: [])
       present(vc, animated: true)
     }
   }

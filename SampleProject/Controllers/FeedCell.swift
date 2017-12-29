@@ -15,7 +15,7 @@ class FeedCell: UICollectionViewCell {
     didSet {
       imageView.image = result.image ?? nil
       descriptionLabel.text = result.firstSentence
-      titleLabel.text = result.title
+      titleLabel.text = result.name
       developerLabel.text = result.developer
       dateLabel.text = result.readableDate
     }

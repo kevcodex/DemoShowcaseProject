@@ -202,7 +202,6 @@
 				4E884EA21EFC7EDE00A19C5F /* Sources */,
 				4E884EA31EFC7EDE00A19C5F /* Frameworks */,
 				4E884EA41EFC7EDE00A19C5F /* Resources */,
-				4E884EC91EFC7F1C00A19C5F /* Swift Format */,
 			);
 			buildRules = (
 			);
@@ -292,23 +291,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4E884EC91EFC7F1C00A19C5F /* Swift Format */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Swift Format";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/swiftFormat\" --indent 2 --disable unusedArguments \"${SRCROOT}/LukeSwiftwalker\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E884EA21EFC7EDE00A19C5F /* Sources */ = {
@@ -546,6 +528,7 @@
 				4E884EC51EFC7EDE00A19C5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E884EC61EFC7EDE00A19C5F /* Build configuration list for PBXNativeTarget "SampleProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +537,7 @@
 				4E884EC81EFC7EDE00A19C5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
