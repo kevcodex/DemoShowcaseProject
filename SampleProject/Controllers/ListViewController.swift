@@ -12,6 +12,8 @@ import UIKit
 class ListViewController: UIViewController {
 
   let client = NetworkClient()
+  
+  let imageCache = NSCache<NSString, UIImage>()
 
   var results: [ObjectFeed] = []
 
@@ -70,11 +72,31 @@ extension ListViewController: UICollectionViewDataSource {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeedCell", for: indexPath) as! FeedCell
 
     let result = results[indexPath.row]
-
+    
     cell.result = result
+    cell.imageView.image = #imageLiteral(resourceName: "PlaceHolder")
     cell.layer.shouldRasterize = true
     cell.layer.rasterizationScale = UIScreen.main.scale
-
+    
+    if let imagePath = result.imagePath {
+      
+      if let cachedImage = self.imageCache.object(forKey: imagePath as NSString) {
+        cell.imageView.image = cachedImage
+      } else {
+        ImageLoader.loadImage(from: imagePath) { (image, error) in
+          guard let image = image, error == .noError else {
+            cell.imageView.image = #imageLiteral(resourceName: "PlaceHolder")
+            return
+          }
+          
+          self.imageCache.setObject(image, forKey: imagePath as NSString)
+          cell.imageView.image = image
+        }
+      }
+    } else {
+      cell.imageView.image = #imageLiteral(resourceName: "PlaceHolder")
+    }
+    
     return cell
   }
 
@@ -123,6 +145,8 @@ extension ListViewController {
 
     detailsViewController.transitioningDelegate = self
     detailsViewController.result = cell.result
+    
+    detailsViewController.image = cell.imageView.image
   }
 }
 

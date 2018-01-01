@@ -12,6 +12,7 @@ import UIKit
 class DetailsViewController: UIViewController {
 
   var result: ObjectFeed!
+  var image: UIImage?
 
   @IBOutlet weak var imageView: UIImageView!
   @IBOutlet weak var dateLabel: UILabel!
@@ -28,9 +29,14 @@ class DetailsViewController: UIViewController {
 
     let colors = [UIColor.clear.cgColor, UIColor.white.cgColor]
     let locations: [CGFloat] = [0.0, 1.0]
-    let gradientImage = result.image?.createGradient(with: colors, at: locations)
-
-    imageView.image = gradientImage
+    
+    if let cachedImage = image {
+      let gradientImage = cachedImage.createGradient(with: colors, at: locations)
+      
+      imageView.image = gradientImage
+    } else {
+      imageView.image = #imageLiteral(resourceName: "PlaceHolder")
+    }
   }
 
   override func viewDidAppear(_ animated: Bool) {
@@ -47,8 +53,8 @@ class DetailsViewController: UIViewController {
 // MARK: - Actions
 extension DetailsViewController {
   @IBAction func ShareTapped(_ sender: UIBarButtonItem) {
-
-    if let image = result.image {
+    
+    if let image = image {
       let vc = UIActivityViewController(activityItems: [result.name, image], applicationActivities: [])
       present(vc, animated: true)
     }

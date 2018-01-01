@@ -29,6 +29,8 @@
 		4E884EEF1EFC7F4D00A19C5F /* ObjectFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E884EDD1EFC7F4D00A19C5F /* ObjectFeed.swift */; };
 		4E884EF01EFC7F4D00A19C5F /* NetworkSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E884EDE1EFC7F4D00A19C5F /* NetworkSearchResponse.swift */; };
 		4E884EF11EFC7F4D00A19C5F /* ActivityProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E884EE01EFC7F4D00A19C5F /* ActivityProgressHud.swift */; };
+		844B14B61FFAAB3200D94C04 /* ImageLoaderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B14B51FFAAB3200D94C04 /* ImageLoaderError.swift */; };
+		84FFE6DF1FFA951700F35B9E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFE6DE1FFA951700F35B9E /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		4E884EDD1EFC7F4D00A19C5F /* ObjectFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectFeed.swift; sourceTree = "<group>"; };
 		4E884EDE1EFC7F4D00A19C5F /* NetworkSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSearchResponse.swift; sourceTree = "<group>"; };
 		4E884EE01EFC7F4D00A19C5F /* ActivityProgressHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityProgressHud.swift; sourceTree = "<group>"; };
+		844B14B51FFAAB3200D94C04 /* ImageLoaderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderError.swift; sourceTree = "<group>"; };
+		84FFE6DE1FFA951700F35B9E /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 				4E884ED51EFC7F4D00A19C5F /* NetworkClient.swift */,
 				4E884ED61EFC7F4D00A19C5F /* NetworkError.swift */,
 				4E884ED71EFC7F4D00A19C5F /* NetworkRequest.swift */,
+				844B14B71FFAAB3700D94C04 /* Image Loader */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -190,6 +195,15 @@
 				4E884EE01EFC7F4D00A19C5F /* ActivityProgressHud.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		844B14B71FFAAB3700D94C04 /* Image Loader */ = {
+			isa = PBXGroup;
+			children = (
+				84FFE6DE1FFA951700F35B9E /* ImageLoader.swift */,
+				844B14B51FFAAB3200D94C04 /* ImageLoaderError.swift */,
+			);
+			path = "Image Loader";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +317,7 @@
 				4E884EE71EFC7F4D00A19C5F /* ActivityViewPresentor.swift in Sources */,
 				4E884EAA1EFC7EDE00A19C5F /* AppDelegate.swift in Sources */,
 				4E884EF01EFC7F4D00A19C5F /* NetworkSearchResponse.swift in Sources */,
+				84FFE6DF1FFA951700F35B9E /* ImageLoader.swift in Sources */,
 				4E884EE41EFC7F4D00A19C5F /* FeedCell.swift in Sources */,
 				4E884EEF1EFC7F4D00A19C5F /* ObjectFeed.swift in Sources */,
 				4E884EEB1EFC7F4D00A19C5F /* NetworkRequest.swift in Sources */,
@@ -315,6 +330,7 @@
 				4E884EF11EFC7F4D00A19C5F /* ActivityProgressHud.swift in Sources */,
 				4E884EEA1EFC7F4D00A19C5F /* NetworkError.swift in Sources */,
 				4E884EE91EFC7F4D00A19C5F /* NetworkClient.swift in Sources */,
+				844B14B61FFAAB3200D94C04 /* ImageLoaderError.swift in Sources */,
 				4E884EE11EFC7F4D00A19C5F /* CustomDismissController.swift in Sources */,
 				4E884EE31EFC7F4D00A19C5F /* DetailsViewController.swift in Sources */,
 			);

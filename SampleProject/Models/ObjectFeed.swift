@@ -20,7 +20,6 @@ struct ObjectFeed: JSONDecodable {
   let rawDate: String
   let developer: String
 
-  var image: UIImage?
 
   var firstSentence: String {
     let seperators = CharacterSet(charactersIn: ".!?")
@@ -31,7 +30,7 @@ struct ObjectFeed: JSONDecodable {
   var readableDate: String {
     ObjectFeed.dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
     ObjectFeed.dateFormatter.timeZone = TimeZone(abbreviation: "GMT")
-    let date = ObjectFeed.dateFormatter.date(from: rawDate)!
+    let date = ObjectFeed.dateFormatter.date(from: rawDate) ?? Date()
 
     ObjectFeed.dateFormatter.dateFormat = "MMM dd, yyyy 'at' hh:mm a"
     ObjectFeed.dateFormatter.amSymbol = "AM"
@@ -70,18 +69,5 @@ struct ObjectFeed: JSONDecodable {
     self.rawDate = rawDate
     self.developer = developer
     self.imagePath = imagePath as? String ?? nil
-
-    // probably better to cache or async the images due to large size
-    if let imagePath = self.imagePath,
-      let url = URL(string: imagePath),
-      let data = try? Data(contentsOf: url),
-      let image = UIImage(data: data),
-      let compressedImageData = UIImageJPEGRepresentation(image, 0.0) {
-
-      self.image = UIImage(data: compressedImageData) ?? nil
-
-    } else {
-      image = UIImage(named: "PlaceHolder") ?? nil
-    }
   }
 }
