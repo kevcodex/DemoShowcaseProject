@@ -9,6 +9,8 @@ import Foundation
 
 // enum for a response error
 enum NetworkError: Error {
+  
+  case badRequest(message: String)
 
   case connectionError(Error)
 

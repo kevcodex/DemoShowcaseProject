@@ -75,8 +75,6 @@ extension ListViewController: UICollectionViewDataSource {
     
     cell.result = result
     cell.imageView.image = #imageLiteral(resourceName: "PlaceHolder")
-    cell.layer.shouldRasterize = true
-    cell.layer.rasterizationScale = UIScreen.main.scale
     
     if let imagePath = result.imagePath {
       

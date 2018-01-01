@@ -21,7 +21,7 @@ protocol NetworkRequest {
 
   associatedtype Response: JSONDecodable
 
-  var baseURL: URL { get }
+  var baseURL: URL? { get }
   var path: String { get }
   var method: HTTPMethod { get }
   var parameters: Any? { get }
@@ -29,12 +29,17 @@ protocol NetworkRequest {
 
 extension NetworkRequest {
 
-  var baseURL: URL {
+  var baseURL: URL? {
 
-    return URL(string: "http://kevcodex.com")!
+    return URL(string: "http://kevcodex.com")
   }
 
-  func buildURLRequest() -> URLRequest {
+  func buildURLRequest() -> URLRequest? {
+    
+    guard let baseURL = baseURL else {
+      return nil
+    }
+    
     let url = baseURL.appendingPathComponent(path)
     var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
 

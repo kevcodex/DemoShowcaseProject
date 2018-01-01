@@ -18,7 +18,11 @@ class NetworkClient {
   func send<Request: NetworkRequest>(request: Request,
                                     completion: @escaping (Result<Request.Response, NetworkError>) -> Void) {
 
-    let urlRequest = request.buildURLRequest()
+    guard let urlRequest = request.buildURLRequest() else {
+      completion(Result(error: .badRequest(message: "Bad URL Request")))
+      return
+    }
+    
     let task = session.dataTask(with: urlRequest) {
       data, response, error in
 
