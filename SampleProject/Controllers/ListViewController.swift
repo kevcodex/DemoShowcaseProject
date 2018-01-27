@@ -79,7 +79,7 @@ extension ListViewController: UICollectionViewDataSource {
     if let imagePath = result.imagePath {
       
       if let cachedImage = self.imageCache.object(forKey: imagePath as NSString) {
-        cell.imageView.image = cachedImage
+        self.fadeImageView(cell.imageView, to: cachedImage, with: 0.5)
       } else {
         ImageLoader.loadImage(from: imagePath) { (image, error) in
           guard let image = image, error == .noError else {
@@ -88,7 +88,7 @@ extension ListViewController: UICollectionViewDataSource {
           }
           
           self.imageCache.setObject(image, forKey: imagePath as NSString)
-          cell.imageView.image = image
+          self.fadeImageView(cell.imageView, to: image, with: 0.5)
         }
       }
     } else {
@@ -168,6 +168,19 @@ extension ListViewController: UIViewControllerTransitioningDelegate {
   func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
     customDismissTransition.originFrame = dismissed.view.frame
     return customDismissTransition
+  }
+}
+
+// MARK: - Private Helpers
+fileprivate extension ListViewController {
+  func fadeImageView(_ imageView: UIImageView, to newImage: UIImage, with duration: TimeInterval) {
+    UIView.transition(with: imageView,
+                      duration: duration,
+                      options: .transitionCrossDissolve,
+                      animations: {
+                        imageView.image = newImage
+    },
+                      completion: nil)
   }
 }
 
