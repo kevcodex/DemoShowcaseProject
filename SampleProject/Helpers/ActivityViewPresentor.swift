@@ -46,7 +46,7 @@ extension ActivityIndicatorPresentor where Self: UIViewController {
   /// Checks to see if a activity indicator is already presented in the view
   private var isActivityIndicatorPresent: Bool {
 
-    let allActivityIndicators = view.subviews.flatMap { $0 as? ActivityProgressHud }
+    let allActivityIndicators = view.subviews.compactMap { $0 as? ActivityProgressHud }
     return (allActivityIndicators.count >= 1 ? true : false)
   }
 }

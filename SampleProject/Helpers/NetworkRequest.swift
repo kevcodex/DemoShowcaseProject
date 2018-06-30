@@ -24,14 +24,14 @@ protocol NetworkRequest {
   var baseURL: URL? { get }
   var path: String { get }
   var method: HTTPMethod { get }
-  var parameters: Any? { get }
+    var parameters: [String: Any]? { get }
 }
 
 extension NetworkRequest {
 
   var baseURL: URL? {
 
-    return URL(string: "http://kevcodex.com")
+    return URL(string: "https://kevcodex.com")
   }
 
   func buildURLRequest() -> URLRequest? {
@@ -45,7 +45,7 @@ extension NetworkRequest {
 
     switch method {
     case .get:
-      let dictionary = parameters as? [String: Any]
+      let dictionary = parameters
       let queryItems = dictionary?.map { key, value in
         return URLQueryItem(name: key, value: String(describing: value))
       }
